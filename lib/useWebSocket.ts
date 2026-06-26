@@ -35,10 +35,10 @@ export function useRealtime() {
   const pushReaction = useCallback((emoji: string) => {
     const id = Math.random().toString(36).slice(2);
     setReactions((r) => [...r, { id, emoji }].slice(-30));
-    // auto-clear after the float animation
+    // auto-clear after the float animation completes
     setTimeout(() => {
       setReactions((r) => r.filter((x) => x.id !== id));
-    }, 3000);
+    }, 1500);
   }, []);
 
   // ---- Simulated fallback: fake presence + ambient reactions ----

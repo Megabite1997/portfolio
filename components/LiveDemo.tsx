@@ -87,12 +87,15 @@ export function LiveDemo() {
               {reactions.map((r) => (
                 <motion.span
                   key={r.id}
-                  initial={{ opacity: 0, scale: 0.5, x: randX(r.id), y: 280 }}
-                  animate={{ opacity: 1, scale: 1, y: 40 }}
-                  exit={{ opacity: 0, scale: 0.8, y: 0 }}
-                  transition={{ duration: 2.6, ease: "easeOut" }}
-                  className="absolute bottom-0 text-3xl"
-                  style={{ left: "50%" }}
+                  initial={{ opacity: 0, scale: 0.4, x: randX(r.id), y: 0 }}
+                  animate={{ opacity: [0, 1, 1, 0], scale: 1, y: -210 }}
+                  exit={{ opacity: 0 }}
+                  transition={{
+                    duration: 1.4,
+                    ease: "easeOut",
+                    times: [0, 0.2, 0.75, 1],
+                  }}
+                  className="absolute bottom-24 left-1/2 -ml-4 text-3xl"
                 >
                   {r.emoji}
                 </motion.span>
@@ -121,9 +124,9 @@ export function LiveDemo() {
   );
 }
 
-// deterministic-ish horizontal jitter per reaction id
+// deterministic-ish horizontal jitter per reaction id (±48px around center)
 function randX(id: string) {
   let h = 0;
-  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) % 200;
-  return h - 100;
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) % 96;
+  return h - 48;
 }
