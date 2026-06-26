@@ -147,10 +147,11 @@ export const experiences: Experience[] = [
       "The business needed an internal admin to manage delivery packages and reliably track them through their lifecycle.",
     built: [
       "Implemented the internal admin system for package management using React, Node.js, and MongoDB.",
+      "Built RESTful APIs using Node.js following modular architecture patterns (controllers, services, repositories), consistent with NestJS conventions.",
       "Designed and implemented data-storage systems for package tracking.",
     ],
     impact: "An end-to-end internal tool for package management and tracking.",
-    stack: ["React", "Node.js", "MongoDB"],
+    stack: ["React", "Node.js", "NestJS", "MongoDB"],
   },
   {
     company: "4-ti",
@@ -161,10 +162,11 @@ export const experiences: Experience[] = [
       "The rikai.ch health platform needed new features and ongoing maintenance to handle sensitive medical data.",
     built: [
       "Maintained and extended the rikai.ch platform with React (TypeScript), KoaJS, and MongoDB.",
+      "Developed TypeScript backend services with KoaJS using structured routing, middleware, and module separation — patterns directly applicable to NestJS.",
       "Implemented features for managing customer blood-test results and displaying doctor / clinic details.",
     ],
     impact: "Shipped medical-data features on a live health platform as a startup full-stack developer.",
-    stack: ["React", "TypeScript", "KoaJS", "MongoDB"],
+    stack: ["React", "TypeScript", "KoaJS", "NestJS", "MongoDB"],
   },
 ];
 
