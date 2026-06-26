@@ -50,7 +50,15 @@ export const skillGroups: SkillGroup[] = [
   {
     title: "Backend",
     accent: "var(--accent-2)",
-    skills: ["Go (Golang)", "Node.js", "Express.js", "KoaJS", "WebSockets", "REST APIs"],
+    skills: [
+      "Go (Golang)",
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "KoaJS",
+      "WebSockets",
+      "REST APIs",
+    ],
   },
   {
     title: "Cloud & Infra",
