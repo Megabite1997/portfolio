@@ -25,7 +25,7 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 px-4 transition-all duration-300 ${
         scrolled ? "py-2" : "py-4"
       }`}
     >
@@ -33,7 +33,6 @@ export function Nav() {
         className={`mx-auto flex max-w-6xl items-center justify-between rounded-full px-4 py-2.5 transition-all duration-300 sm:px-5 ${
           scrolled ? "glass shadow-lg shadow-black/30" : ""
         }`}
-        style={{ marginInline: "1rem" }}
       >
         <a
           href="#top"
@@ -79,7 +78,7 @@ export function Nav() {
       </nav>
 
       {open && (
-        <div className="mx-4 mt-2 grid gap-1 rounded-2xl glass p-3 md:hidden">
+        <div className="mt-2 grid gap-1 rounded-2xl glass p-3 md:hidden">
           {links.map((l) => (
             <a
               key={l.href}
