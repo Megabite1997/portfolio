@@ -1,0 +1,3 @@
+# The Go realtime service deploys separately (Fly.io / Lightsail), not to Vercel.
+realtime
+.env.local
