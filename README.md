@@ -45,7 +45,14 @@ Replace [`public/resume.pdf`](public/resume.pdf) to update the downloadable rés
 
 ## Deployment
 
-### 1. Web app → Vercel
+This repo is connected to Vercel via the GitHub integration:
+
+- **Push to `main`** → Vercel auto-builds and deploys to **production**.
+- **Push to any other branch / open a PR** → Vercel creates a **preview** deployment.
+
+So the normal workflow is just `git push` — no manual deploy needed.
+
+### Manual deploy (optional)
 
 ```bash
 npm i -g vercel
