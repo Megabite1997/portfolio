@@ -21,8 +21,12 @@ export const profile = {
 
 export const socials = [
   { label: "Email", href: "mailto:fendersdtua@hotmail.com", icon: "mail" },
-  { label: "GitHub", href: "https://github.com/", icon: "github" },
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: "linkedin" },
+  { label: "GitHub", href: "https://github.com/Megabite1997", icon: "github" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/tada-chaipanya-47b849214/",
+    icon: "linkedin",
+  },
 ] as const;
 
 export const stats = [
